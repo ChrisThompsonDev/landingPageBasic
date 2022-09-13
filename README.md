@@ -13,7 +13,7 @@ Starting with a mobile first mindet, this simple landing page was built to keep 
 
 ## Optimizations
 
-It's very easy to add too much to a website so I wanted to keep this simple. I used only a few colors (navy, white, black and gray) and only 2 images. I wanted this page to load quickly.
+It's very easy to add too much to a website so I wanted to keep this simple. I used only a few colors (navy, white, black and gray) and only 3 images. I wanted this page to load quickly.
 
 
 ## Lessons Learned:
