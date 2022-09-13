@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Basic Landing Page</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- *********** FONTS *********** -->
+		<!--load all Font Awesome styles -->
+		<script src="https://kit.fontawesome.com/13471d8c05.js" crossorigin="anonymous"></script>
+		<!--load Google Fonts-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="/">
+					<i class="navLogo fa-solid fa-font-awesome">Your Logo</i>
+				</a>
+				<ul class="menu">
+					<li><a class="menuItem" href="/">Link1</a></li>
+					<li><a class="menuItem" href="/">Link2</a></li>
+					<li><a class="menuItem" href="/">Link3</a></li>
+					<li><a class="menuItem" href="/">Link4</a></li>
+					<li><a class="menuItem" href="/">Link5</a></li>
+				</ul>
+				<button class="hamburger">
+					<i class="menuIcon fa-solid fa-bars"></i>
+					<i class="closeIcon fa-solid fa-xmark"></i>
+				</button>
+			</nav>
+		</header>
+
+		<main class="banner" id="banner1">
+			<section class="bannerImg">
+
+			</section>
+			<h1 class="mainName">Company Name, Inc.</h1>
+			<h2 class="mainSlogan">Company Slogan</h2>
+		</main>
+
+		<main>
+			<section class="coreValuesSection">
+				<img class="coreValuesImg" src="/images/values.png">
+			</section>
+			<section class="startSection">
+				<h2>Starting Mobile First</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia pariatur dignissimos minus harum magnam a asperiores, molestiae repudiandae porro consequatur autem iure, praesentium eius aliquam ad at. Quia, quidem voluptatibus.</p>
+			</section>
+			<section class="howSection">
+				<h2>Built Using HTML<i class="fa-brands fa-html5"></i>, CSS<i class="fa-brands fa-css3-alt"></i> & JS<i class="fa-brands fa-square-js"></i></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus odio quia ratione eos non? Delectus sequi recusandae sunt dolorem iusto magnam consectetur fugit libero aliquid, vel facere laboriosam est nam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus odio quia ratione eos non? Delectus sequi recusandae sunt dolorem iusto magnam consectetur fugit libero aliquid, vel facere laboriosam est nam.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus odio quia ratione eos non? Delectus sequi recusandae sunt dolorem iusto magnam consectetur fugit libero aliquid, vel facere laboriosam est nam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus odio quia ratione eos non? Delectus sequi recusandae sunt dolorem iusto magnam consectetur fugit libero aliquid, vel facere laboriosam est nam.</p>
+				
+			</section>
+			<section class="extraSection">
+				<h2>Extra Section Since People Love to Scroll <i class="fa-solid fa-hand-point-left"></i></i></h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia pariatur dignissimos minus harum magnam a asperiores, molestiae repudiandae porro consequatur autem iure, praesentium eius aliquam ad at. Quia, quidem voluptatibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia pariatur dignissimos minus harum magnam a asperiores, molestiae repudiandae porro consequatur autem iure, praesentium eius aliquam ad at. Quia, quidem voluptatibus.</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia pariatur dignissimos minus harum magnam a asperiores, molestiae repudiandae porro consequatur autem iure, praesentium eius aliquam ad at. Quia, quidem voluptatibus.</p>
+			</section>
+			<main class="banner" id="banner2">
+				<section class="bannerImg">
+				<section class="overlay"></section>
+				</section>
+				<h1 class="mainName secondBannerName">A Nice transparent overlay for some wonderful text to lay on top of.</h1>
+			</main>
+		</main>
+
+		<section class="contact">
+			<section class="contactHeader">
+				<span>Contact Us</span>
+				<h2>Questions or Inquiries?</h2>
+				<p>Or maybe you just like what you see and want a website just like this one for yourself</p>
+			</section>
+			<section class="contactFormSection">
+				<form class="contactForm">
+					<section class="row contactRow1">
+						<section class="col">
+							<label class="form-check-label" for="firstName">First Name</label>
+							<input name="firstName" id="first-name" type="text" class="formControl" required>
+						</section>
+						<section class="col">
+							<label class="form-check-label" for="lastName">Last Name</label>
+							<input name="lastName" id="last-name" type="text" class="formControl" required>
+						</section>
+					</section>
+					<section class="row contactRow2">
+						<section class="col">
+							<label class="form-check-label" for="email">Email Address</label>
+							<input name="email" id="email" type="text" class="formControl" required>
+							<section id="emailHelp" class="formText">
+								We'll never give away or sell your information.
+							</section>
+						</section>
+						<section class="col">
+							<label class="form-label" for="contactReason">Reason For Contact</label>
+							<select class="form-select" name="contactReason" id="contactReason" required>
+								<option value disabled selected hidden>Select Reason</option>
+								<option value="1">Client Service</option>
+								<option value="2">Employment</option>
+								<option value="3">Technical</option>
+								<option value="4">Other</option>
+							</select>
+						</section>
+					</section>
+					<label class="contactFormLabel">Message</label>
+					<textarea class="form-control" id="message" rows="6">
+
+					</textarea>
+					<section class="bottomMessageText">
+						<i class="fa-solid fa-jedi"></i>"<b>Do or do Not.</b>
+						There is no try. "<i class="fa-solid fa-jedi"></i>
+					</section>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+
+			</section>
+		</section>
+			
+
+
+		<footer>
+			<section class="footerTop">
+				<section class="footerTopSection">
+					<a href="#" class="footerTopSectionHeader">Questions?</a>
+					<a href="mailto:christhompsondev@protonmail.com">ChrisThompsonDev@ProtonMail</a>
+					<a href="#">(123) 456-7891</a>
+					<a href="#" class="footerTopSectionHeader">Follow Me</a>
+					<section class="footerTopSectionSocial">
+						<a href="https://www.linkedin.com/in/cthompsondev/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+						<a href="https://twitter.com/cThompsonDev" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+						<a href="https://github.com/ChrisThompsonDev" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+						<a href="https://www.facebook.com/cThompsonDev/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+					</section>
+				</section>
+				<section class="footerMid">
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem id, quae minima illum quod qui ea voluptate aspernatur dolore.</p>
+				</section>
+				<section id="footerBottom">
+					<p class="copyright">&copy; <a class="portfolioLink" href='https://www.christhompsondev.com/' target="_blank">Chris Thompson</a>. All rights reserved.</p>
+				</section>
+			</section>
+			
+		</footer>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

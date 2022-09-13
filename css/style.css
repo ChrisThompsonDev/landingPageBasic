@@ -1,0 +1,406 @@
+/* Box Model Hack */
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+     font-size: 62.5%;
+     font-family: 'Oswald', sans-serif;
+     vertical-align: baseline;
+}
+body {
+     -webkit-text-size-adjust: 100%;
+     -webkit-tap-highlight-color: rgba(0,0,0,0);
+     font-size: 4rem;
+}
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+     padding: 4rem;
+}
+img {
+     vertical-align: middle;
+}
+h2 {
+     font-size: 6rem;
+     text-transform: uppercase;
+     font-weight: 500;
+     line-height: 1.4;
+     margin-bottom: 0.5rem;
+     margin-block-start: 0.83em;
+     margin-block-end: 0.83em;
+     color: rgb(0, 23, 116);
+     text-align: center;
+}
+p {
+     display: block;
+     margin-block-start: 1em;
+     margin-block-end: 1em;
+     margin-inline-start: 0px;
+     margin-inline-end: 0px;
+     padding: 5rem;
+}
+a {
+     text-decoration: none;
+}
+/******************************************
+/* NAV MENU
+/*******************************************/
+.navLogo {
+     font-size: 8rem;
+     color: rgb(0, 23, 116);
+}
+.menuItem {
+     display: block;
+     margin: 6rem 4rem;
+     font-size: 5rem;
+     color: rgb(215, 214, 214);
+     text-decoration: none;
+}
+.menuItem:hover {
+     text-decoration: underline;
+}
+.hamburger {
+     position: absolute;
+     z-index: 100;
+     top: 4rem;
+     right: 4rem;
+     padding: 4px;
+     border: none;
+     background: none;
+     cursor: pointer;
+}
+.menu {
+     position: fixed;
+     transform: translateY(-200%);
+     transition: transform 0.2s;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     z-index: 99;
+     background: rgb(0, 9, 46);
+     color: rgb(255, 255, 255);
+     list-style: none;
+     padding-top: 10rem;
+     padding-left: 3rem;
+}
+.showMenu {
+     transform: translateY(0);
+     height: 80rem;
+}
+.menuIcon, .closeIcon {
+     font-size: 8rem;
+     
+}
+.closeIcon {
+     display: none;
+     color: white;
+}
+/******************************************
+/* MAIN
+/*******************************************/
+.banner {
+     background-position: center 35%;
+     height: 620px;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-end;
+     align-items: flex-start;
+     position: relative;
+     background-size: cover;
+}
+#banner1 {
+     background-image: url(https://images.unsplash.com/photo-1506765515384-028b60a970df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80);
+}
+.mainName, .mainSlogan {
+     z-index: 6;
+     color: white;
+     margin: 0 20px;
+     line-height: 1.4;
+}
+.mainName {
+     font-size: 6rem;
+     font-weight: 200;
+}
+.mainSlogan {
+     font-size: 4rem;
+     font-weight: 0;
+     padding-bottom: 6rem;
+}
+/******************************************
+/* MIDDLE SECTIONS
+/*******************************************/
+.coreValuesSection, .coreValuesImg {
+     width: 90vw;
+     margin: 0 auto;
+}
+#banner2 {
+     background-image: url(https://images.unsplash.com/photo-1499479387933-4567e710809c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80);
+     text-align: center;
+}
+.overlay {
+     position: absolute;
+     left: 0;
+     top: 0;
+     height: 100%;
+     width: 100%;
+     z-index: 3;
+     background-color: rgba(0, 0, 0, 0.717);
+}
+.secondBannerName {
+     margin-bottom: 6rem;
+}
+/******************************************
+/* CONTACT
+/*******************************************/
+.contact {
+     background-color: rgb(239, 243, 254);
+}
+.contactHeader {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 9rem 6rem 1rem 6rem;
+     text-align: center;
+     
+}
+.contactHeader span {
+     color: rgb(78, 78, 78);
+}
+.contactHeader h2 {
+     color: black;
+     margin: 1rem;
+}
+.contactHeader p {
+     padding: 0;
+     margin: 0;
+     color: rgb(78, 78, 78);
+}
+
+.contactFormSection {
+     text-align: center;
+     max-width: 1400px;
+     overflow-x: hidden;
+     margin: 6rem auto 0 auto;
+     width: 100%;
+     padding-right: .75rem;
+     padding-left: .75rem;
+     color: rgb(78, 78, 78);
+}
+.contactForm {
+     text-align: start;
+     max-width: 850px;
+     padding: 0 2rem;
+     margin: 0 auto;
+}
+.row {
+     display: flex;
+     margin-right: 1rem;
+     margin-left: 1rem;
+}
+.contactRow1, .contactRow2 {
+     margin-bottom: 3rem;
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+     max-width: 100%;
+}
+.col {
+     flex: 1 0 0%;
+}
+#emailHelp, .bottomMessageText {
+     font-size: 3rem;
+}
+label {
+     display: inline-block;
+}
+.formControl {
+     padding: 1rem 1rem;
+     font-size: 3rem;
+     display: block;
+     font-weight: 400;
+     line-height: 1.5;
+     color: black;
+     background-color: white;
+     background-clip: padding-box;
+     border: 1px solid rgb(221, 220, 220);
+     appearance: none;
+     border-radius: 0.25rem;
+}
+input, .form-select {
+     margin: 1rem 0 0 0;
+     font-size: 3rem;
+}
+.form, .contactMessageBox {
+     padding: 0.5rem 1rem;
+     font-size: 3rem;
+}
+.form-select {
+     display: block;
+     width: 96%;
+     line-height: 1.5;
+     color: black;
+     background-color: white;
+     padding: 1rem 1rem;
+     border: 1px solid rgb(221, 220, 220);
+     appearance: none;
+     border-radius: 0.25rem;
+}
+.form-select option {
+     font-size: 1.5rem;
+}
+.contactFormLabel {
+     margin-bottom: 1rem;
+}
+#message {
+     width: 100%;
+     border: 1px solid rgb(221, 220, 220);
+     appearance: none;
+     border-radius: 0.25rem;
+     font-size: 3rem;
+     text-align: left;
+}
+textarea {
+     resize: vertical;
+}
+
+.btn {
+     background:#092061;
+     color: white;
+     margin: 4rem 0;
+     font-size: 3rem;
+     padding: 20px 25px;
+     border-radius: 10px;
+     border: 0;
+
+}
+/******************************************
+/* FOOTER
+/*******************************************/
+footer {
+     font-size: 4rem;
+     padding: 10px 80px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background-color: #092061;
+     color: #fefefe;
+     width: 100%;
+}
+.footerTop {
+     justify-content: space-between;
+     align-items: flex-start;
+}
+.footerTopSection a {
+     display: block;
+     color: #c6c4c4;
+     padding-bottom: 5px;
+     line-height: 1.4;
+     font-size: 3.5rem;
+}
+footer .footerTop .footerTopSection .footerTopSectionHeader {
+     font-weight: 600;
+     color: #fefefe;
+     margin-top: 30px;
+     margin-bottom: 20px;
+     opacity: 1;
+     font-size: 3.5rem;
+}
+.footerTopSectionSocial {
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     align-items: center;
+}
+.footerTopSectionSocial a {
+     font-size: 4.5rem;
+     padding-top: 0;
+     opacity: .8;
+     margin-right: 2.5rem;
+}
+.footerMid {
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     align-items: flex-start;
+     width: 100%;
+     text-align: center;
+     position: relative;
+     padding: 5px 0;
+     margin-top: 6rem;
+     
+}
+.footerMid p {
+     border-top: 1px solid rgba(254, 254, 254, 0.3);
+     border-bottom: 1px solid rgba(254, 254, 254, 0.3);
+}
+.footerMid p, .portfolioLink, .copyright {
+     color: #c6c4c4;
+     line-height: 1.4;
+     font-size: 3.5rem;
+     text-align: left;
+     padding-left: 0;
+}
+#footerBottom {
+     width: 100%;
+     display: flex;
+     justify-content: flex-start;
+     align-items: flex-start;
+     text-align: left;
+}
+#footerBottom .portfolioLink {
+     text-decoration: underline;
+     color: #fefefe;
+     border-bottom: none;
+}
+.copyright {
+     width: 100%;
+     text-align: left;
+     padding: 50px 0;
+     color: #c6c4c4;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media only screen and (min-width: 1500px) {
+     html {
+          font-size: 45%;
+     }
+     img {
+          
+     }
+
+     .hamburger {
+          padding-right: 14rem; 
+          right: 1rem;
+     }
+}
+
