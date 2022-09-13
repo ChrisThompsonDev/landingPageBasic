@@ -1,32 +1,31 @@
-# My Awesome Project
-Write a short sentence or two about this project and what it does. Be sure to include a link and a screenshot (we're front end devs so we can actually see our work!).
+# Landing Page Basic
+This is a simple landing page, built from scratch, using popular modern styling. 
 
-**Link to project:** http://recruiters-love-seeing-live-demos.com/
+**Link to project:** https://landingpagebasic.netlify.app/
 
-![alt tag](http://placecorgi.com/1200/650)
+![alt tag](/images/landingPageBasic.gif)
 
 ## How It's Made:
 
-**Tech used:** HTML, CSS, JavaScript, Framework of choice
+**Tech used:** HTML, CSS, & JavaScript
 
-Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write *something*. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
+Starting with a mobile first mindet, this simple landing page was built to keep everything in the center of the viewport. Images are not too large and there is a collapsible menu in the top right. 
 
 ## Optimizations
-*(optional)*
 
-You don't have to include this section but interviewers *love* that you can not only deliver a final product that looks great but also functions efficiently. Did you write something then refactor it later and the result was 5x faster than the original implementation? Did you cache your assets? Things that you write in this section are **GREAT** to bring up in interviews and you can use this section as reference when studying for technical interviews!
+It's very easy to add too much to a website so I wanted to keep this simple. I used only a few colors (navy, white, black and gray) and only 2 images. I wanted this page to load quickly.
+
 
 ## Lessons Learned:
 
-No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those *whoa this is awesome* or *fuck yeah I did it!* moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing.
+This project **started** as practice trying to simplify the collapsible menu icon (hamburger) that is in the top right. So many examples onlie require a lot of code and I wanted to hone it in a bit. It evolved into an enitre webpage. I got a lot of extra practice with flexbox and inheritance with this project because I tried to avoid using Id's as much as possible. Not a single !Important is used in this project either.
 
 ## Examples:
-Take a look at these couple examples that I have in my own portfolio:
+Take a look at a couple of other examples that I have in my portfolio:
 
-**Palettable:** https://github.com/ChrisThompsonDev/palettable
+**ACNH Tracking Tools** https://github.com/ChrisThompsonDev/acnhTrackingTools-mvc
 
-**Twitter Battle:** https://github.com/ChrisThompsonDev/twitter-battle
+**Restaurant Savore:** https://github.com/ChrisThompsonDev/restaurantSavore
 
-**Patch Panel:** https://github.com/ChrisThompsonDev/patch-panel
 
 
