@@ -81,7 +81,7 @@
 				<p>Or maybe you just like what you see and want a website just like this one for yourself</p>
 			</section>
 			<section class="contactFormSection">
-				<form class="contactForm" netlify>
+				<form name="contact" method="POST" class="contactForm" data-netlify="true">
 					<section class="row contactRow1">
 						<section class="col">
 							<label class="form-check-label" for="firstName">First Name</label>
@@ -104,15 +104,15 @@
 							<label class="form-label" for="contactReason">Reason For Contact</label>
 							<select class="form-select" name="contactReason" id="contactReason" required>
 								<option value disabled selected hidden>Select Reason</option>
-								<option value="1">Client Service</option>
-								<option value="2">Employment</option>
-								<option value="3">Technical</option>
-								<option value="4">Other</option>
+								<option value="Client Service">Client Service</option>
+								<option value="Employment">Employment</option>
+								<option value="Technical">Technical</option>
+								<option value="Other">Other</option>
 							</select>
 						</section>
 					</section>
-					<label class="contactFormLabel">Message</label>
-					<textarea class="form-control" id="message" rows="6" data-netlify=“true”>
+					<label class="contactFormLabel" for="message" data-netlify=“true”>Message</label>
+					<textarea name="message" type="text" class="form-control" id="message" rows="6">
 
 					</textarea>
 					<section class="bottomMessageText">
